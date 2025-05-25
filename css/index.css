@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;   
+}
+
+.hr-estilo {
+    /* Elimina o haz transparente el background-color para que se vean las puntas */
+    height: 8px;
+    background: linear-gradient(to right,transparent,yellow 20%;royalblue 80%, transparent);
+    border: none;
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.hr-lanza::after {
+    content: '';
+    position: absolute;
+    right: -15px; /* Ajusta la posición para que se vea como punta */
+    top: -5px; /* Ajusta la posición vertical */
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid brown; /* Crea la forma de la punta */
+}
+
+
+.titulo-adaptable {
+    width: 100%;
+    text-align:center;
+    border-radius: 12%; 
+}
+
+.imagen-fondo {
+    background-image: url("../media/img/deep_space.png")
+}
+
+.logo-boton { 
+        position: relative; 
+        display: inline-block;
+        border-radius:12px;
+        padding: 5px; 
+        /* ... estilos del logo ... */ 
+}
+
+.chanfles {
+    border-radius:12px;
+}
+
+.texto-titulo {
+    font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: green;
+    color:aqua;
+    border-radius: 10px;
+}
+
+.texto-inicial {
+    font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color:rgb(8,37,57,0.6);
+    color:rgba(220, 183, 155, 0.7);
+    
+    border-radius: 10px;
+}
+
+.texto-nav {
+    font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color:rgb(8,37,57,0.7);
+    color:rgba(220, 183, 155, 1
+    );
+    
+    border-radius: 10px;
+}
+
+.texto-nav1 {
+    ul {
+        font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        background-color:rgb(99,70,61,0.4);
+        color:greenyellow;
+        border-radius: 10px;
+    }
+}
+
+
+
+.caja2 {
+    border: 2px solid rgb(20, 20, 20);
+}
+
+.sin-vinetas {
+    list-style: none;
+    padding:0;
+    margin:10;
+    border-radius:20;
+    text-align: center;
+
+}
+
+.formulario {
+    border: 2 px solid rgb(8, 37, 57);
+    background-color:rgba(31, 47, 65, 0.5) ;
+    border-radius: 10px;
+    padding: 2% ;
+    font-family:'Cal Sans','Verdana','Tahoma','San-serif';
+}
+
+.boton {
+    border-radius: 10px;
+    background-color:rgba(220, 183, 155, 0.7) ;
+
+}
+
+.boton:hover {
+    background-color: rgba(99, 70, 61, 0.1);
+    color: white;
+}
+
+.textarea {
+    color:black;
+}
+.footer {
+    background-color: black;
+    color:white;
+    font-size:4vw;
+    font-family:'Cal Sans','Verdana','Tahoma','San-serif';
+}
+
+.iconos {
+
+}
+
+.footer-contenedor {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
