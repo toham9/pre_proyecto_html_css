@@ -1,0 +1,120 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    color:darkgoldenrod
+}
+.contenedor {
+    display: flex; /* Utilizamos Flexbox para el diseño lado a lado */ 
+    align-items: flex-start; /* Alineamos los elementos en la parte superior */ 
+    max-width: 800px; /* Ancho máximo del contenedor (ajusta según necesites) */ 
+    margin: 20px auto; /* Centramos el contenedor en la página */ 
+    padding: 20px; 
+    border: 1px solid #ccc; /* Un borde para visualizar el contenedor */
+}
+
+.imagen-contenedor {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.texto-contenedor {
+    flex-grow: 1; /* Permite que el cuadro de texto crezca para ocupar el espacio restante */
+}
+
+h2 {
+    margin-top: 0; /* Elimina el margen superior predeterminado del título */ 
+    color: #333;
+}
+
+p{
+    line-height: 1.6; /* Mejora la legibilidad del texto */ 
+    color: #555; 
+}
+
+img {
+    display: block; /* Evita espacio extra debajo de la imagen */ 
+    max-width: 200px; /* Ancho máximo de la imagen (ajusta según necesites) */ 
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+body { 
+    background-color: #f0e6d2; /* Un color base ocre muy pálido */ 
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02) 1px, transparent 1px, transparent 2px), linear-gradient(to top left, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02) 1px, transparent 1px, transparent 2px); 
+    background-size: 20px 20px; /* Ajusta el tamaño del "ruido" */ 
+    background-repeat: repeat; 
+}
+
+.contenedor-2 {
+    display: flex; /* Utilizamos Flexbox para el diseño lado a lado */ 
+    align-items: flex-start; /* Alineamos los elementos en la parte superior */ 
+    max-width: 800px; /* Ancho máximo del contenedor (ajusta según necesites) */ 
+    margin: 20px auto; /* Centramos el contenedor en la página */ 
+    padding: 20px; 
+    border: 1px solid #ccc; /* Un borde para visualizar el contenedor */
+}
+
+/*.formulario-contacto {
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 600px; 
+    border: 1px solid #ccc; border-radius: 10px; } */ 
+
+    .formulario-contacto { 
+        background-color: #a6937c; /* Beige oscuro */ 
+        padding: 30px; /* Aumentamos un poco el padding */ 
+        margin: 30px auto; /* Aumentamos el margen */ 
+        max-width: 600px; 
+        border-radius: 15px; /* Bordes más redondeados para un look moderno */ 
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para elevación */ 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna común */ 
+    }
+
+    .logo-boton { 
+        position: relative; 
+        display: inline-block; 
+        /* ... estilos del logo ... */ 
+    } 
+
+    .logo-boton img {
+        max-width: 50px;
+        height: auto; 
+        display: block; 
+        /* ... estilos del logo ... */ 
+    } 
+    
+    .logo-boton .tooltip { 
+        visibility: hidden; 
+        width: 50px; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        color: #fff; text-align: center; 
+        border-radius: 6px; 
+        padding: 5px; 
+        position: absolute; 
+        z-index: 1; 
+        bottom: 125%; 
+        left: 50%; 
+        margin-left: -75px; 
+        opacity: 0; 
+        transition: opacity 0.3s ease-in-out; 
+    } 
+    
+    .logo-boton:hover .tooltip { 
+        visibility: visible; 
+        opacity: 1; 
+    } 
+    
+    .logo-boton .tooltip::after { 
+        content: ""; 
+        position: absolute; 
+        top: 100%; 
+        left: 50%; 
+        margin-left: -5px; 
+        border-width: 5px; 
+        border-style: solid; 
+        border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent; 
+    }
